@@ -51,6 +51,12 @@ export default {
           foreground: "hsl(var(--destructive-foreground) / <alpha-value>)",
           border: "var(--destructive-border)",
         },
+        brand: {
+          dark: "#021f53",
+          orange: "#ff6500",
+          yellow: "#ff9f1c",
+          amber: "#f59e0b"
+        },
         ring: "hsl(var(--ring) / <alpha-value>)",
         chart: {
           "1": "hsl(var(--chart-1) / <alpha-value>)",
