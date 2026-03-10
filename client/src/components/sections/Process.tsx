@@ -25,7 +25,7 @@ export function Process() {
 
         <div className="relative">
           {/* Connecting Line */}
-          <div className="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-y-1/2" />
+          <div className="hidden md:block absolute top-8 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
           <div className="grid md:grid-cols-4 gap-8 md:gap-4 relative z-10">
             {steps.map((step, i) => (
