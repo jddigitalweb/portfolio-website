@@ -60,21 +60,22 @@ export function Services() {
           </motion.p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((svc, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-transform duration-300"
+              transition={{ duration: 0.5, delay: i * 0.12 }}
+              className="glass-card p-8 rounded-2xl group hover:-translate-y-3 hover:shadow-[0_0_30px_rgba(255,101,0,0.2)] active:translate-y-0 transition-all duration-300 border border-white/5 hover:border-white/15"
+              whileHover={{ borderColor: "rgba(255,255,255,0.2)" }}
             >
-              <div className="w-14 h-14 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-[#ff9f1c] mb-6 group-hover:bg-gradient-brand group-hover:text-white transition-colors duration-300">
+              <div className="w-14 h-14 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-[#ff9f1c] mb-6 group-hover:bg-gradient-brand group-hover:text-white group-hover:scale-110 transition-all duration-300">
                 {svc.icon}
               </div>
-              <h3 className="text-xl font-display font-bold text-white mb-3">{svc.title}</h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <h3 className="text-xl font-display font-bold text-white mb-3 transition-colors duration-300">{svc.title}</h3>
+              <p className="text-muted-foreground leading-relaxed group-hover:text-white/80 transition-colors duration-300">
                 {svc.desc}
               </p>
             </motion.div>

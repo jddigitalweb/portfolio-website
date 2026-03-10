@@ -92,7 +92,7 @@
   }
 }
 
-/* Float animations for hero background */
+/* Enhanced animations for premium feel */
 @keyframes float {
   0% { transform: translateY(0px) rotate(0deg); }
   50% { transform: translateY(-20px) rotate(5deg); }
@@ -105,6 +105,21 @@
   100% { transform: translateY(0px) rotate(0deg); }
 }
 
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(255, 101, 0, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(255, 101, 0, 0.5); }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes subtle-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
 .animate-float {
   animation: float 8s ease-in-out infinite;
 }
@@ -112,4 +127,22 @@
 .animate-float-delayed {
   animation: float-reverse 10s ease-in-out infinite;
   animation-delay: -4s;
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 3s ease-in-out infinite;
+}
+
+.animate-subtle-bounce {
+  animation: subtle-bounce 2s ease-in-out infinite;
+}
+
+/* Smooth transitions for interactive elements */
+button, a, [role="button"] {
+  @apply transition-all duration-200 ease-out;
+}
+
+/* Enhanced focus states for accessibility */
+:focus-visible {
+  @apply outline-none ring-2 ring-[#ff6500] ring-offset-2 ring-offset-[#010a15] rounded;
 }

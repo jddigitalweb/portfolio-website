@@ -41,20 +41,20 @@ export function Hero() {
               We build premium, high-performance websites for startups and agencies. Elevate your brand with cutting-edge design and blazing-fast development.
             </p>
             
-            <div className="flex flex-wrap items-center gap-4">
+            <div className="flex flex-wrap items-center gap-6 pt-6">
               <button 
                 onClick={() => scrollTo("#contact")}
-                className="px-8 py-4 rounded-xl font-medium bg-gradient-brand text-white shadow-[0_0_40px_rgba(255,101,0,0.3)] hover:shadow-[0_0_60px_rgba(255,101,0,0.4)] hover:-translate-y-1 transition-all duration-300 flex items-center gap-2 group"
+                className="px-8 py-4 rounded-xl font-medium bg-gradient-brand text-white shadow-[0_0_40px_rgba(255,101,0,0.3)] hover:shadow-[0_0_60px_rgba(255,101,0,0.5)] hover:-translate-y-1 hover:scale-105 active:scale-95 transition-all duration-300 flex items-center gap-3 group"
               >
                 Let's Talk
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" />
               </button>
               
               <button 
                 onClick={() => scrollTo("#portfolio")}
-                className="px-8 py-4 rounded-xl font-medium glass hover:bg-white/10 border border-white/10 text-white transition-all duration-300 flex items-center gap-2 group"
+                className="px-8 py-4 rounded-xl font-medium glass hover:bg-white/15 border border-white/10 hover:border-white/30 text-white hover:scale-105 active:scale-95 transition-all duration-300 flex items-center gap-3 group backdrop-blur-md"
               >
-                <Play className="w-4 h-4 text-[#ff9f1c]" fill="currentColor" />
+                <Play className="w-4 h-4 text-[#ff9f1c] group-hover:scale-125 transition-transform duration-300" fill="currentColor" />
                 View Our Work
               </button>
             </div>
