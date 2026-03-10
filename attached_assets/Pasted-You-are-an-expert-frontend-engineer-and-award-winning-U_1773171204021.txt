@@ -1,0 +1,297 @@
+You are an expert frontend engineer and award-winning UI designer.
+
+Create a modern premium digital agency website for a company called **JD Digital Web**.
+
+The site must look like a high-end modern agency website similar to Awwwards-winning sites, with smooth animations, strong typography, and modern UI patterns.
+
+Tech Stack:
+
+* Next.js 14
+* Tailwind CSS
+* Framer Motion for animations
+* React Icons or Lucide Icons
+* Fully responsive design
+* SEO optimized
+
+Design Style:
+Premium dark + gradient tech style.
+
+Use modern web design patterns including:
+
+* glassmorphism
+* gradient highlights
+* floating UI elements
+* soft shadows
+* animated backgrounds
+* subtle blur effects
+* smooth hover animations
+
+Brand Colors:
+Primary: #021f53
+Accent Gradient:
+#ff6500
+#ff9f1c
+#f59e0b
+
+Use gradients for highlights and buttons.
+
+Typography:
+Headings: Space Grotesk
+Body: Inter
+
+Spacing should feel premium and modern.
+
+The design should feel like a **high-end tech startup agency website**.
+
+Project Structure:
+
+/app
+/components
+/sections
+/styles
+
+Create reusable components.
+
+Landing Page Sections (Single Page Website)
+
+1. Sticky Navigation Bar
+   Transparent navbar that becomes blurred on scroll.
+
+Left:
+Logo text: JD Digital Web
+
+Right:
+Services
+Work
+Process
+Contact
+
+CTA Button:
+Start a Project
+
+Add hover underline animations.
+
+---
+
+2. Hero Section (Very Important)
+
+Large hero layout with two columns.
+
+Left Side:
+Headline:
+
+"Websites That Elevate Your Brand"
+
+Subtext:
+
+"JD Digital Web creates high-performance websites optimized for speed, design, and business growth."
+
+Buttons:
+
+View Work
+Start a Project
+
+Right Side:
+Animated floating gradient shapes.
+
+Background should include subtle animated gradients.
+
+Use Framer Motion to animate hero elements on page load.
+
+---
+
+3. Authority Stats Section
+
+Display animated counters.
+
+6+ Years Experience
+100+ Websites Built
+50+ Happy Clients
+90+ Performance Scores
+
+Animate numbers when they scroll into view.
+
+---
+
+4. Services Section
+
+Modern card layout.
+
+Services:
+
+Domain & Hosting Setup
+Custom Website Design
+Responsive Mobile Optimization
+Website Speed Optimization
+Core Web Vitals Optimization
+Website Audits
+Existing Website Optimisation
+
+Each service card should include:
+
+icon
+title
+short description
+
+Cards should have hover effects and subtle lift animations.
+
+---
+
+5. Portfolio Section
+
+Modern grid portfolio with filtering.
+
+Filter buttons:
+
+All
+Business
+Ecommerce
+Redesign
+
+Each project card should contain:
+
+project image placeholder
+title
+short description
+
+Hover interaction:
+
+image zoom
+overlay text
+
+Cards animate into view on scroll.
+
+---
+
+6. Process Section
+
+Create a horizontal timeline showing the process.
+
+Steps:
+
+Discovery
+Design
+Development
+Launch
+
+Each step has:
+
+icon
+title
+short description
+
+Add subtle line animation between steps.
+
+---
+
+7. Why Choose Us Section
+
+Icon feature grid.
+
+Features:
+
+6+ Years Industry Experience
+Performance Optimized Websites
+SEO Friendly Development
+Modern UI/UX Standards
+Mobile First Development
+Clean Scalable Code
+
+Cards should have gradient borders.
+
+---
+
+8. About Section
+
+Two column layout.
+
+Left:
+Text description.
+
+Text:
+
+"JD Digital Web is a web design agency with over 6 years of experience creating modern, fast, and scalable websites for businesses."
+
+Right:
+Abstract animated illustration or gradient shapes.
+
+---
+
+9. CTA Section
+
+Large gradient banner.
+
+Headline:
+
+"Ready to Launch Your Website?"
+
+Subtext:
+
+"Let's build a modern high-performance website for your business."
+
+Button:
+
+Start Your Project
+
+Use glowing gradient background.
+
+---
+
+10. Contact Section
+
+Clean modern contact form.
+
+Fields:
+
+Name
+Email
+Message
+
+Add submit button with gradient.
+
+Also include:
+
+Email contact
+WhatsApp quick button
+
+---
+
+11. Footer
+
+Logo
+Short description
+Quick links
+Social icons
+
+Dark background.
+
+---
+
+Animations:
+
+Use Framer Motion for:
+
+section reveal animations
+fade up on scroll
+hover animations
+hero entrance animation
+portfolio hover
+
+Scrolling should feel smooth and premium.
+
+---
+
+Performance Requirements:
+
+Optimized images
+Clean code structure
+Reusable components
+Mobile responsive
+SEO meta tags
+Fast load times
+
+---
+
+Final Result:
+
+The website should look like a **premium modern digital agency website built in 2025**, visually impressive but clean and conversion focused.
