@@ -1,39 +1,35 @@
 import { useMutation } from "@tanstack/react-query";
-import { api, type CreateContactMessageRequest } from "@shared/routes";
 import { useToast } from "@/hooks/use-toast";
+
+export interface ContactFormData {
+  name: string;
+  email: string;
+  message: string;
+}
 
 export function useSubmitContact() {
   const { toast } = useToast();
 
   return useMutation({
-    mutationFn: async (data: CreateContactMessageRequest) => {
-      const res = await fetch(api.contact.create.path, {
-        method: api.contact.create.method,
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
-
-      if (!res.ok) {
-        if (res.status === 400) {
-          const errorData = await res.json();
-          throw new Error(errorData.message || "Validation failed");
-        }
-        throw new Error("Failed to send message");
-      }
-
-      return res.json();
+    mutationFn: async (data: ContactFormData) => {
+      const subject = encodeURIComponent(`New Project Inquiry from ${data.name}`);
+      const body = encodeURIComponent(
+        `Name: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`
+      );
+      window.location.href = `mailto:hello@jddigitalweb.com?subject=${subject}&body=${body}`;
+      return data;
     },
     onSuccess: () => {
       toast({
-        title: "Message sent successfully!",
-        description: "We'll get back to you as soon as possible.",
+        title: "Opening your email client...",
+        description: "A new email has been pre-filled with your message.",
         variant: "default",
       });
     },
-    onError: (error: Error) => {
+    onError: () => {
       toast({
-        title: "Error sending message",
-        description: error.message,
+        title: "Error",
+        description: "Could not open email client. Please email us directly.",
         variant: "destructive",
       });
     },
